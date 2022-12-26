@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "jiav-backend-ansible"
+version = "0.1.0"
+description = "Ansible backed for jiav tool"
+authors = ["Vadim Khitrin <me@vkhitrin.com>"]
+license = "BSD-3-Clause"
+readme = "README.md"
+packages = [{include = "jiav"}]
+classifiers = [
+    'Development Status :: 3 - Alpha',
+    'Environment :: Plugins',
+    'License :: OSI Approved :: BSD License',
+    'Operating System :: POSIX :: Linux',
+    'Operating System :: MacOS',
+    'Programming Language :: Python :: 3 :: Only',
+    'Programming Language :: Python :: 3.8',
+    'Topic :: Utilities'
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+ruamel-yaml = "^0.17.21"
+ansible-runner = "^2.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
